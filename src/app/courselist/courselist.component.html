@@ -1,0 +1,19 @@
+<div class="dashboard">
+  <div class="search-bar">
+    <input type="text" [(ngModel)]="searchKeyword" (input)="searchCourses()" placeholder="Search Courses">
+  </div>
+  <h1>Available Courses</h1>
+
+  <div class="academy-list">
+    <div class="academy-item" *ngFor="let course of filteredCourses">
+      <div class="academy-box">
+        <h4>{{ course.name }}</h4>
+        <p>Duration: {{ course.duration }}</p>
+        <p>{{ course.description }}</p>
+        <p>Students: {{ course.students }}</p>
+        <p>Timings: {{ course.timings }}</p>
+        <button [routerLink]="['/enrollform']" class="enroll-button">Enroll</button>
+      </div>
+    </div>
+  </div>
+</div>

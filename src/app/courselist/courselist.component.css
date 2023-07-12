@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .dashboard {
+    padding: 200px;
+    background-color: rgb(66, 164, 197);
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .academy-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .academy-item {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .academy-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .academy-box:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .academy-box h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .academy-box p {
+    margin: 0;
+    color: #666;
+  }
+  
+  .enroll-button {
+    background-color: #4285F4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .enroll-button:hover {
+    background-color: #0F9D58;
+  }
+  
+  .enroll-button:focus {
+    outline: none;
+  }
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }

@@ -1,0 +1,30 @@
+<div class="dashboard">
+    <h2>Welcome User</h2>
+    <p>{{ userName }}</p>
+    <ul class="tab-buttons">
+      <li (click)="setActiveTab('academy')" [class.active]="activeTab === 'academy'">Academy</li>
+      <li (click)="setActiveTab('enrolled-courses')" [class.active]="activeTab === 'enrolled-courses'">Enrolled Courses</li>
+    </ul>
+    <div class="tab-content">
+      <div *ngIf="activeTab === 'academy'">
+        <h3>List of Academies</h3>
+        <div class="search-bar">
+          <input type="text" [(ngModel)]="searchKeyword" (input)="searchAcademies()" placeholder="Search Academies">
+        </div>
+        <div class="academy-list">
+          <div class="academy-item" *ngFor="let academy of filteredAcademies">
+            <div class="academy-box">
+              <button [routerLink]="['courselist']">
+                <img [src]="academy.imageUrl" alt="Academy Image">
+                <div class="academy-details">
+                  <h4>{{ academy.name }}</h4>
+                  <p>{{ academy.description }}</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

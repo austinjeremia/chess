@@ -1,0 +1,129 @@
+.dashboard {
+    background-color: #2e38c5;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2,
+  p {
+    margin: 0;
+    color: #0a0707;
+  }
+  
+  .tab-buttons {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .tab-buttons li {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #666666;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .tab-buttons li.active {
+    background-color: #0056b3;
+  }
+  
+  .tab-content {
+    background-color: #73d1e9;
+    padding: 20px;
+  }
+  
+  h3 {
+    margin: 0 0 10px;
+    color: #3c12d4;
+  }
+  
+  .academy-list {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+    
+  .academy-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .academy-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .academy-box button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .academy-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  .academy-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .academy-details {
+    margin-top: 10px;
+  }
+  
+  h4,
+  p {
+    margin: 0;
+    color: #333;
+  }
+  
+  .dashboard-container {
+    background-color: #96dff5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .tab-buttons {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .search-bar {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Add margin-bottom to create a gap */
+  }
+  
+  .search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  

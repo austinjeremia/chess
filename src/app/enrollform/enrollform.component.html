@@ -1,0 +1,38 @@
+<div class="body">
+<h2 class="form-title">Enrollment Form</h2>
+<form (ngSubmit)="submitForm()" #enrollForm="ngForm" class="enrollment-form">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required [(ngModel)]="formData.name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required [(ngModel)]="formData.email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required [(ngModel)]="formData.phone" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" [(ngModel)]="formData.address" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" [(ngModel)]="formData.city" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" [(ngModel)]="formData.state" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" [(ngModel)]="formData.country" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="zip">ZIP Code:</label>
+    <input type="text" id="zip" name="zip" [(ngModel)]="formData.zip" class="form-control">
+  </div>
+  <button type="submit" [disabled]="!enrollForm.valid" class="submit-button">Enroll Now</button>
+</form>
+</div>
